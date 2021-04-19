@@ -7,6 +7,7 @@ import { RiCalendarLine } from "react-icons/ri";
 import { GoFileDirectory } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
+import {HiLocationMarker} from "react-icons/hi"
 import logo from "../../images/logo.png"
 const navItems = [
   {
@@ -17,23 +18,23 @@ const navItems = [
   {
     name: "Coaching",
     icon: <BsPeople />,
-    link: "/recruitment",
+    link: "/coaching",
   },
   {
     name: "Collaborations",
     icon: <GiGooeyEyedSun />,
-    link: "/onboarding",
+    link: "/collaborations",
   },
 
   {
     name: "Progress",
     icon: <VscGraph />,
-    link: "/reports",
+    link: "/progress",
   },
   {
     name: "Knowledge",
     icon: <IoSettingsOutline />,
-    link: "/settings",
+    link: "/Knowledge",
   },
   {
     name: "Calendar",
@@ -88,8 +89,8 @@ const DashboardLayout = ({ children }) => {
           </div>
         
         <div className="timezone">
-          <h4>Your Timezone</h4>
-          <h5>Netherlands</h5>
+          <h4><HiLocationMarker className="location-icon"/> Your Timezone <h5>Netherlands</h5></h4>
+          
         </div>
       </nav>
       <div className="main-container">{children}</div>

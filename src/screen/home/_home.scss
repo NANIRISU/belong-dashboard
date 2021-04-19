@@ -2,6 +2,9 @@
     //padding:16px ;
     .home-container{
         display: flex;
+        .nav-bar{
+            width: 50%;
+        }
     .home-modal{
         height:85vh;
         // background:$hr_background;
@@ -60,7 +63,7 @@
          height: 8vh;
         
          &:hover{
-            color: transparentize($color:#10ADB9, $amount:0.6); 
+            // color: transparentize($color:#10ADB9, $amount:0.6); 
             border-bottom: 4px solid transparentize($color: #10ADB9, $amount:0.6);
             
           }

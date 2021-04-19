@@ -97,14 +97,19 @@
       align-items: center;
      
       padding: 8px;
-      margin-top: 32px;
+      // margin-top: 32px;
       margin-left: 16px;
       cursor: pointer;
       h4{
         color: $hr_text;
+        .location-icon{
+          font-size: x-large !important;
+        }
       }
       h5{
         color:$hr_gray1;
+        margin-left: 25px;
+        font-size: 15px;
       }
       &:hover{
         color: transparentize($color:#10ADB9, $amount:0.6); 

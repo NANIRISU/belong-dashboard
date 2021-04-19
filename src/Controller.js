@@ -17,11 +17,11 @@ import Settings from './screen/settings/Settings'
         
         <DashboardLayout>
             <Route exact path="/" render={(props)=><Home {...props} />}/>
-            <Route path ="/recruitment" render={(props)=><Recruitment {...props}/>}/>
-            <Route path="/onboarding" render={(props)=><Onboarding {...props}/>}/>
-            <Route path="/reports" render={(props)=><Reports {...props}/>}/>
+            <Route path ="/coaching" render={(props)=><Recruitment {...props}/>}/>
+            <Route path="/collaborations" render={(props)=><Onboarding {...props}/>}/>
+            <Route path="/progress" render={(props)=><Reports {...props}/>}/>
             <Route path="/calendar" render={(props)=><Calendar {...props}/>}/>
-            <Route path="/settings" render={(props)=><Settings {...props}/>}/>
+            <Route path="/knowledge" render={(props)=><Settings {...props}/>}/>
             </DashboardLayout>
         </Switch>
        
